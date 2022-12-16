@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>About QC</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="Width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA_compatib<le" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-color: lightyellow;
+            
+        }
+      
+        </style>
+  
+    
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo"> 
+            <h2>QUANTUM ELECTRONICS</h2>
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="items.html">Items</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+            
+        </div>
+        <div class="hero"></div>
+    </nav>
+   
+    <section class="about">
+            
+
+            <h1>About Us</h1>
+
+
+            <h2>Welcome to our About Us page!</h2>
+            
+             <p>                
+                We are a family-owned business based in the United States. We specialize in providing high quality products and services to our customers. Our top priority is customer satisfaction and we strive to provide the best possible service for every customer. 
+                
+                We have been in business for over 15 years and during this time we have developed a reputation for providing excellent customer service. We are committed to offering our customers the best products and services at the most competitive prices. We are always looking for ways to improve our services and products to better meet the needs of our customers. 
+                
+                Our team consists of experienced professionals who are dedicated to providing the best possible customer service. We have a team of knowledgeable staff members who are always available to answer any questions or concerns you may have. We also offer a wide variety of products and services to meet the needs of our customers. 
+                
+                We take pride in our commitment to providing the highest level of customer service and satisfaction. We strive to provide our customers with a positive experience every time they shop with us. 
+                
+                Thank you for visiting our About Us page. We hope that you have enjoyed learning more about our business. If you have any questions or would like to learn more about
+            </p>
+            
+        </section>
+        <h3>Customers Feedbacks</h3>
+        <table bgcolor="lightblue">
+            <tr >
+                <th>Name</th>
+
+                <th>feedback</th>
+            </tr>
+            <% comments.forEach(comment => { %>
+                <tr bgcolor="white">
+                    <td bgcolor="white"><%= comment.name %>: 
+                    <td><%= comment.comment %></td>
+                </tr>
+            <% }) %>
+        </table>
+                
+                <div class="comment-box">
+            <p>Leave a comment</p>
+            <form class="comment-form" method="post" action="api/enter">
+                <input name="name" type="text" placeholder="Name">
+                <input name="emailaddress" type="text" placeholder="email address">
+                <textarea rows="10" name="comment" type="text"placeholder="Write Your Comment"></textarea>
+                <button type="submit">Post Comment</button>
+            </form>
+
+        </div>
+    
+    <script src="main.js"></script>
+</body>
+
+
+</html>

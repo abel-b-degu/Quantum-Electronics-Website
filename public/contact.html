@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="Width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA_compatib<le" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <style>
+       body{
+       background-color: lightskyblue;
+       font-size: 30px;
+       }
+    </style>
+</head>
+
+<body>
+
+
+    <nav>
+        <div class="logo"> 
+            <h2>QUANTUM ELECTRONICS</h2>
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="items.html">Items</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+            
+        </div>
+        <div class="hero"></div>
+    </nav>
+
+
+    <h3>Welcome to our Contact Us page!</h3>
+    <p> We want to hear from you. Whether you have a question, concern, suggestion, or just want to say hello, we're here to listen.
+
+        To get in touch, please use the form below, email us directly or call us at (111) 222-3333.
+    
+        We're available Monday through Friday 9am-5pm EST, and we'll do our best to get back to you as soon as possible and please leave your info below.
+    </p>
+  
+        
+                <br>
+        Sincerely,
+        <br>
+    <form method="post" action="api/data">
+        <table>
+            <div>
+
+                <label for="fname">First Name: </label>
+                <input type="text" id="fname" name="fname" placeholder="first name" minlength="4"maxlength="12">
+                
+            </div>
+
+            <br>
+
+            <div>
+               
+                <label for="lname">Last Name: </label>
+                <input type="text" id="lname" name="lname" minlength="4"maxlength="12" placeholder="last name">
+                
+            </div>
+
+
+            <br>
+
+            <div>
+
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" placeholder="email" >
+                
+            </div>
+
+            <br>
+    
+            <div>
+                <input type="submit"> 
+            </div>
+        </table>
+    </form>
+    <br>
+    <br>
+    
+<h4>Store Hours</h4>
+</p>
+            <table bgcolor="black">
+                <tr bgcolor="grey">
+                    <th>Sunday</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                </tr>
+                <tr bgcolor="lightgrey">
+                    <td>Closed</td>
+                    <td>9-5</td>
+                    <td>9-5</td>
+                    <td>9-5</td>
+                    <td>9-5</td>
+                    <td>9-5</td>
+                    <td>Closed</td>
+                </tr>
+            </table>
+    
+
+    <script src="main.js"></script>
+</body>
+
+</html>
